@@ -3,11 +3,11 @@ import pytest
 from Pages.Home_page import Home_page
 from Pages.Login import login
 from Pages.Company_management import Company
+import time
 
 class Test():
     @pytest.fixture()
     def setup(self):
-        driver=self.driver
         driver = webdriver.Chrome()
         driver.get("https://development.vyble.io")
         driver.maximize_window()
